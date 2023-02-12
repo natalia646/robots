@@ -1,0 +1,36 @@
+#logo{
+    width: 30px;
+}
+.logo{
+    display: flex; 
+    margin: 1rem;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(163, 96, 224);
+}
+.all-robors{
+    background-image: url(../img/fon.png);
+    background-position: center;
+    background-size: cover ;
+}
+article{
+   display: inline-block;
+   margin: auto;
+   margin: 2.5%;
+   border-color: rgb(19, 185, 52) ;
+}
+h2{
+    color: #280658;
+}
+img{
+    width: 150px;
+}
+button{
+    color: rgb(92, 33, 147);
+    background-color: antiquewhite;
+    border-color: rgba(55, 15, 92, 0.1);
+    display: inline-block;
+    margin: 1rem;  
+}
