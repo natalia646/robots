@@ -11,7 +11,7 @@ fetch("https://dummyjson.com/users")
     for (let robot of robots) {
       let article = document.createElement("article");
       let h2 = document.createElement("h2");
-      h2.innerText = robot.firstName + " " + robot.lastName;
+      h2.textContent = robot.firstName + " " + robot.lastName;
 
       let p = document.createElement("p");
       p.innerText = `Hi! I'm ${robot.firstName}. I am ${robot.age} years old. 
@@ -21,21 +21,19 @@ fetch("https://dummyjson.com/users")
 
       let img = document.createElement("img");
       img.src = robot.image;
-      
-      let btnDetailed = document.createElement("button");
-      btnDetailed.onclick = function () {
 
-      };
+      let btnDetailed = document.createElement("button");
+      btnDetailed.onclick = function () {};
+
       btnDetailed.innerText = "Detailed";
 
       let btnCollect = document.createElement("button");
-      btnCollect.onclick = function () {
-
-      };
+      btnCollect.onclick = function () {};
       btnCollect.innerText = "Collect";
 
+     
 
-      article.append(h2, img, p, btnDetailed,btnCollect);
+      article.append(h2, img, p, btnDetailed, btnCollect);
       div.appendChild(article);
     }
     document.body.append(div);
