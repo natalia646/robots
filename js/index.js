@@ -23,12 +23,15 @@ fetch("https://dummyjson.com/users")
       img.src = robot.image;
 
       let btnDetailed = document.createElement("button");
-      btnDetailed.onclick = function () {};
-
+      btnDetailed.onclick = function () {
+        window.location.href = 'detailed.html?data=' + JSON.stringify(robot)
+      };
       btnDetailed.innerText = "Detailed";
 
       let btnCollect = document.createElement("button");
-      btnCollect.onclick = function () {};
+      btnCollect.onclick = function () {
+        window.location.href = 'colection.html'
+      };
       btnCollect.innerText = "Collect";
 
      
