@@ -1,0 +1,15 @@
+#allColect {
+  display: flex;
+  flex-wrap: wrap;
+}
+.toColect{
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    margin: 1.4rem;
+   display: inline;
+   background-image: url(../img/fon.png);
+}
+
+h2{
+    margin-left: 2rem;
+}

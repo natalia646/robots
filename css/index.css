@@ -1,11 +1,3 @@
-:root{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    --main-color: rgb(92, 33, 147);
-    --button-color: rgba(246, 239, 199, 0.868);
-    --h1-color: rgb(237, 233, 209) ;
-    --h2-color: #280658;
-    --border-color: rgba(0, 0, 0, 0.125);
-}
 #logo {
   width: 30px;
   margin-left: 1rem;
@@ -23,11 +15,6 @@ h1 {
   background-color: var(--main-color);
   align-items: center;
 }
-.all-robors {
-  background-image: url(../img/fon.png);
-  background-position: center;
-  background-size: cover;
-}
 article {
   margin: 1.4rem;
   display: inline-block;
@@ -42,17 +29,17 @@ h2 {
 }
 img {
   width: 150px;
-
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
-.button {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
+#added {
+  width: 2rem;
 }
-button{
-  color: var(--main-color) ;
-  background-color: var(--button-color);
-  border-color: var(--border-color);
+#button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 p {
   margin-left: 1rem;
@@ -73,13 +60,16 @@ a {
   p {
     margin-top: 2rem;
   }
-  .button{
+  .button {
     margin-right: 2rem;
   }
-  button{
+  button {
     margin-top: 3.3rem;
     margin-bottom: 3.3rem;
     margin-left: 1rem;
-    margin-right: 1rem ;
+    margin-right: 1rem;
+  }
+  img {
+    margin: 0;
   }
 }

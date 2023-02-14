@@ -1,8 +1,11 @@
+
 article{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-
+    background-image: url(../img/fon.png);
+    background-position: center;
+    background-size: cover;
 }
 .title{
     display: flex;
@@ -13,8 +16,15 @@ h1{
     justify-content: center;
 }
 p{
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 img{
     width: 120%;
+}
+#added{
+    width: 2rem;
+    margin-left: 1rem;
+}
+#addToColection{
+    display: flex;
 }

@@ -1,0 +1,19 @@
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --main-color: rgb(92, 33, 147);
+  --button-color: rgba(246, 239, 199, 0.868);
+  --h1-color: rgb(237, 233, 209);
+  --h2-color: #280658;
+  --border-color: rgba(0, 0, 0, 0.125);
+}
+button {
+  color: var(--main-color);
+  background-color: var(--button-color);
+  border-color: var(--border-color);
+}
+
+body {
+  background-image: url(../img/fon.png);
+  background-position: center;
+  background-size: cover;
+}

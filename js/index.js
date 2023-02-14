@@ -4,9 +4,7 @@ fetch("https://dummyjson.com/users")
     const robots = robotsObj.users;
 
     let div = document.createElement("div");
-    const classDiv = document.createAttribute("class");
-    classDiv.value = "all-robors";
-    div.setAttributeNode(classDiv);
+    div.id = "all-robors";
 
     for (let robot of robots) {
       let article = document.createElement("article");
@@ -22,9 +20,7 @@ fetch("https://dummyjson.com/users")
       img.src = robot.image;
 
       let contButton = document.createElement("div");
-      const classButton = document.createAttribute("class");
-      classButton.value = "button";
-      contButton.setAttributeNode(classButton);
+      contButton.id = "button";
       let btnDetailed = document.createElement("button");
       btnDetailed.onclick = function () {
         window.location.href = "detailed.html?data=" + JSON.stringify(robot);
@@ -33,9 +29,27 @@ fetch("https://dummyjson.com/users")
 
       let btnCollect = document.createElement("button");
       btnCollect.onclick = function () {
-        window.location.href = "colection.html";
+        let colectRobotFromLS = localStorage.getItem("colection");
+        let img = document.createElement("img");
+        img.src = "img/added.svg";
+        img.id = "added";
+
+        if (colectRobotFromLS === null) {
+          localStorage.setItem("colection", JSON.stringify([robot])) &&
+            contButton.append(img);
+        }
+        let colectRobotArray = JSON.parse(colectRobotFromLS);
+        colectRobotArray.push(robot);
+        let stringify = JSON.stringify(colectRobotArray);
+        localStorage.setItem("colection", stringify);
+
+        if (colectRobotArray.includes(robot)) {
+          contButton.append(img);
+        }
       };
-      btnCollect.innerText = "Collect";
+
+      btnCollect.innerText = "Add to collection";
+
       contButton.append(btnDetailed, btnCollect);
 
       article.append(h2, img, p, contButton);
