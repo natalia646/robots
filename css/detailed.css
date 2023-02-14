@@ -1,11 +1,8 @@
 #description{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url(../img/fon.png);
-    background-position: center;
-    background-size: cover;
-
+    background-position:inherit;
 }
 #title{
     display: flex;
@@ -23,5 +20,4 @@ img{
 }
 #addToColection{
     display: flex;
-    justify-content: center;
 } 

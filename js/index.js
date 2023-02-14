@@ -49,7 +49,6 @@ fetch("https://dummyjson.com/users")
       };
 
       btnCollect.innerText = "Add to collection";
-
       contButton.append(btnDetailed, btnCollect);
 
       article.append(h2, img, p, contButton);
