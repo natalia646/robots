@@ -33,6 +33,7 @@ fetch("https://dummyjson.com/users")
         let img = document.createElement("img");
         img.src = "img/added.svg";
         img.id = "added";
+    
 
         if (colectRobotFromLS === null) {
           localStorage.setItem("colection", JSON.stringify([robot])) &&
