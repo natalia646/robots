@@ -1,3 +1,6 @@
+body{
+  background-position:inherit;
+}
 #allColect {
   display: flex;
   flex-wrap: wrap;
