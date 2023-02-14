@@ -28,7 +28,7 @@ domain: ${robot.domain},
 address: ${robot.address.address},
 university: ${robot.university},
 company: ${robot.company.name},
-`.toLocaleUpperCase()
+`
 
 let btnCollect = document.createElement("button");
 btnCollect.onclick = function () {
